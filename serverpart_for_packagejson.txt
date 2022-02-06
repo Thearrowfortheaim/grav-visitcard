@@ -1,0 +1,7 @@
+add this code package json to let back end work
+
+ \"npm run server\" to 
+   "dev": "cross-env NODE_ENV=development concurrently  \"npm run server\" "
+
+   like this: 
+  "dev": "cross-env NODE_ENV=development concurrently \"npm run client\"  \"npm run server\" "
