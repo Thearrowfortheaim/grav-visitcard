@@ -38,13 +38,22 @@
   font-feature-settings: 'liga';
 }
 
-nav{
+ nav{
   background: #008080;
-  
+  width: 100%;
+  left: 0;
+  }
+
+  .sidenav{
+    background-color:cadetblue;
+   color: white;
   }
   
   body {
-      height: 900px; 
+    height: 2000px; 
+    width: 100%;
+    /* height: 900px; 
+     background-color:	#707070; */
   }
 
   footer{
@@ -54,12 +63,10 @@ nav{
     width: 100%;
     background: #008080;
     text-align: center;
-  }
+  } 
 
 .background {
- 
-     background:url('../public/grav_background.jpg')no-repeat center center fixed ; 
-   
+     background-image:url('../public/grav_background.jpg'); 
      height: 100%;
      width: 100%;
      background-size: cover;
@@ -67,6 +74,25 @@ nav{
      overflow: hidden;
      position: absolute;
      left: 0;
+
+     /*
+     no-repeat center center fixed 
+     */
+}
+
+.wellcome {
+  background-image:url('../src/pictures/wellcome.jpg'); 
+  height: 900px;
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  position: fixed;
+}
+
+.container{
+  width: 100%;
 }
 
 .copyrightText{
@@ -77,23 +103,125 @@ nav{
 .main-text{
   font-size: 15pt;
   background-color: #008080;
-  opacity: 0.4;
-  border-radius: 18px;
+  color: white;
+  min-height: 60px;
+  box-shadow:
+  inset rgba(0,0,0,.5) -3px -3px 8px,
+  inset rgba(255,255,255,.9) 3px 3px 8px,
+  rgba(0,0,0,.8) 10px 10px 15px -3px;
+  /* box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 5px 3px 5px   #008080; */
+  /* box-shadow: 0 15px 28px rgba(0,0,0,0.45), 0 15px 15px rgba(0,0,0,0.45); */
+  /* border-radius: 18px; */
 
 }
-.main-text:hover{ 
+
+/* .main-text:hover{ 
   font-size: 15pt;
   opacity: 1;
   color:white;
-  border-radius: 18px;
+  min-height: 60px;
+  /* border-radius: 18px; */
+/*} */
 
+.wrapper{
+  min-height: 60px;
+}
+
+.main-text-wellcome{
+  font-size: 15pt;
+  background-color: #008080;
+  border-radius: 18px;
+  opacity: 0.6;
+}
+
+ .parallax-container{
+  /* margin-left: -33.33%;
+  margin-right: -33.33%; */
+  margin-left: -25%;
+  margin-right: -25%;
+  height:350px;
+  background-size: cover;
+}
+.parallax{
+   width:max-content;
+  width: 100%;
+  background-size: cover;
+
+} 
+
+/* Kontaktformular */
+.title_grav{
+  color:white;
+}
+
+ .kntForm_main_text{
+  color:white;
+  font-size: 15pt;
+  border-color:  #008080;
+  border-width: "1";
+  border-style: solid;
+  margin-top: 50px;
+  margin-bottom: 50px; 
+  opacity: 0.6;
+  background-color: #008080;
+
+  /* border-radius: 18px; */
+
+
+} 
+.container_termin{
+  /* flex-direction: row ; */
+  /* margin-left: 0%;
+  margin-right: 0%; */
+  
+}
+.termin_bckGr{
+  background-image:url('../src/pictures/wellcome.jpg'); 
+  background-size: cover;
+  height: 100%; 
+  background-attachment:fixed;
+  margin-left: -23%;
+  margin-right: -23%;
+   
+}
+.kontakt{
+  text-align: left;
+  padding-left: 10px;
   
 }
 
-.parallax-container{
- height: 300px; 
-}
 
+/* label focus color */
+.input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: white !important;
+ }
 
+/* label underline focus color */
+ .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important;
+ }
+
+ /* label focus color */
+.input-field input[type=email]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: white !important;
+ }
+
+/* label underline focus color */
+ .input-field input[type=email]:focus, .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important;
+ }
+
+ /* label focus color */
+.input-field input[type=password]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: white !important;
+ }
+
+/* label underline focus color */
+ .input-field input[type=password]:focus, .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important;
+ }
 
 
